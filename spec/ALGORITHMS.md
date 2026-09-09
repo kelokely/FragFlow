@@ -146,10 +146,14 @@ FOR each (probe p, site s):
                        A SINGLE ABSENT FRAME TERMINATES A RUN.
 ```
 
-**No gap bridging is a measured choice, not a convention.** The smallest inter-event gap observed on
-the carrier was 400 ps and never 200 ps, across 934 gaps; bridging at 600 ps moves the fast-component
-weight from 85.9 % to 77.6 %, so part of what bridging recovers is boundary rattle rather than
-continued residence.
+**No gap bridging is a measured choice, not a convention.** For one probe at one site the smallest inter-event gap on
+the carrier is 400 ps, two frame spacings, and never 200 ps: bridging at 200 ps merges nothing,
+while bridging at 400 ps merges 2 598 pairs. Bridging at 600 ps moves the fast-component weight
+down 8.3 points, from 85.9 % to 77.6 %, so part of what bridging recovers is boundary rattle
+rather than continued residence. Both values come from the separate refit used for the
+sensitivity analyses, not from the fit behind Table S6, which puts the unbridged pooled fast
+component at 84.6 % on the same 11 927 events; what the test establishes is the change
+within one refit.
 
 **Which of these constants matters.** Sweeping one at a time: `CONTACT` is **inert** across 3.5 to
 4.5 A, returning 152 sites and 1670 events at every value. `CLUSTER_EPS` moves the site count 152 to
