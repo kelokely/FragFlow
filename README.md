@@ -58,6 +58,11 @@ TREK-1 and to 150 ns on the receptor, with the first 50 ns of each discarded, so
 `nsteps` is the length its trajectory reached. To reproduce a replicate, set `nsteps` to the target
 length or extend the run to it; do not take `nsteps` as given.
 
+The carrier's `start.gro` carries positions only, while its `production.mdp` sets
+`continuation = yes` and no `gen_vel`. Started as deposited it would begin from rest rather
+than continue. Set `gen_vel = yes` with a temperature, or supply a checkpoint, before running
+that system. The receptor's and TREK-1's starting coordinates carry velocities.
+
 ## Regenerating the figures
 
 Requires Python with NumPy and Matplotlib.

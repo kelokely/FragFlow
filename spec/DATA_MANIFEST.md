@@ -21,8 +21,8 @@ parameters, topology, index groups, starting coordinates and the stream files ea
 |---|---|---|
 | `fig4_reference.csv` | Data File S1 | far-field reference profile per replicate; probe transfer ladder |
 | `fig5_specificity.csv` | Data File S2 | firing rate against threshold, both references, all three systems (Table S3) |
-| `fig6_c5ar1_channels.csv` | Data File S3 | C5aR1 cavities, four channels, pooled values and intervals (Table S4) |
-| `fig11_cav35_channels.csv` | Data File S4 | AAC cavities, same four channels (Table S5) |
+| `fig6_c5ar1_channels.csv` | Data File S3 | C5aR1 cavities: the fragment, hydration and lining channels and probe occupancy, pooled, with intervals (Table S4) |
+| `fig11_cav35_channels.csv` | Data File S4 | AAC cavities, the same four columns (Table S5) |
 | `fig12_residence.csv` | Data File S5 | residence mixture decomposition, per replicate and pooled (Tables S6, S7) |
 
 ## Cavity inventories and site characterization
