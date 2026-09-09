@@ -1,0 +1,7 @@
+cavity,zeta,ddG,ddG_lo,ddG_hi,pct_undercoordinated,pct_hydrophobic,pct_charged,benz_per_frame,water_per_frame
+cav39,-0.78,-2.63,-2.69,-2.57,66.0,70.6,5.9,8.68,4.28
+cav14,-0.22,,,,25.9,0.0,50.0,0.06,16.35
+cav11,+1.28,,,,45.9,28.6,42.9,0.14,10.58
+cav18,+1.31,,,,42.8,25.0,33.3,0.00,10.07
+SURFACE,,,,,35.6,,,,
+BULK,,,,,12.2,,,,

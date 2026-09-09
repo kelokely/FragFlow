@@ -1,0 +1,26 @@
+; ACEM_bonded.itp -- bonded parameters absent from the trimmed bilayer forcefield.
+; Extracted by atom-type tuple from ffbonded.itp of the CHARMM36 (July 2021) GROMACS force-field distribution (forward/reverse, X wildcards).
+; #include AFTER forcefield.itp and BEFORE any moleculetype.
+
+[ bondtypes ]
+   CG2O1    CG331     1   0.14900000    209200.00 ; PROT Ala Dipeptide (5/91)
+   CG2O1    NG2S2     1   0.13600000    359824.00 ; PROT from NG2S2  CT3, neutral glycine, adm jr.
+   CG2O1    OG2D1     1   0.12300000    518816.00 ; PROT Peptide geometry, condensed phase (LK)
+   CG331     HGA3     1   0.11110000    269449.60 ; PROT alkane update, adm jr., 3/2/92
+   NG2S2     HGP1     1   0.10000000    401664.00 ; PROT adm jr. 8/13/90 acetamide geometry and vibrations
+
+[ angletypes ]
+    HGA3    CG331     HGA3     5   108.400000   297.064000   0.18020000      4518.72 ; PROT alkane update, adm jr., 3/2/92
+    HGP1    NG2S2     HGP1     5   120.000000   192.464000   0.00000000         0.00 ; PROT adm jr. 8/13/90  geometry and vibrations
+   CG2O1    CG331     HGA3     5   109.500000   276.144000   0.21630000     25104.00 ; PROT alanine dipeptide, 5/09/91
+   CG2O1    NG2S2     HGP1     5   120.000000   418.400000   0.00000000         0.00 ; PROT his, adm jr. 8/13/90  geometry and vibrations
+   CG331    CG2O1    NG2S2     5   116.500000   418.400000   0.24500000     41840.00 ; PROT adm jr. 8/13/90  geometry and vibrations
+   CG331    CG2O1    OG2D1     5   121.000000   669.440000   0.00000000         0.00 ; PROT Alanine Dipeptide ab initio calc's (LK)
+   NG2S2    CG2O1    OG2D1     5   122.500000   627.600000   0.23700000     41840.00 ; PROT adm jr. 4/10/91, acetamide update
+
+[ dihedraltypes ]
+   CG2O1    CG331    NG2S2    OG2D1     2     0.000000  1004.160000  ; PROT NMA Vibrational Modes (LK) WILDCARD
+   CG331    CG2O1    NG2S2     HGP1     9   180.000000     5.857600     2 ; PROT adm jr. 4/10/91, acetamide update
+   NG2S2    CG2O1    CG331     HGA3     9     0.000000     0.000000     3 ; PROT, sp2-methyl, no torsion potential
+   OG2D1    CG2O1    CG331     HGA3     9   180.000000     0.000000     3 ; PROT adm jr., 8/13/90  geometry and vibrations
+   OG2D1    CG2O1    NG2S2     HGP1     9   180.000000     5.857600     2 ; PROT adm jr. 4/10/91, acetamide update

@@ -1,0 +1,288 @@
+{
+ "_authority": {
+  "note": "DATA in fig5_specificity.py is a transcription of these tables. The script asserts against this file at import, so the figure cannot be drawn from numbers that disagree with the measurement.",
+  "rule": "n_obs >= 1 AND ddG <= tau",
+  "tau": [
+   -0.5,
+   -1.0,
+   -1.5,
+   -2.0,
+   -2.5,
+   -3.0
+  ],
+  "units": "percent of voxels in the population that fire",
+  "what": "Firing rates of the frozen detection rule, for Figure 5 of the manuscript."
+ },
+ "current": {
+  "AAC": {
+   "pops": {
+    "A": {
+     "depth": [
+      4.63,
+      0.23,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "nvox": 33285,
+     "populated": 5773,
+     "scalar": [
+      4.57,
+      0.2,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "source": "eight-replicate production pool"
+    },
+    "B": {
+     "depth": [
+      0.06,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "nvox": 43019,
+     "populated": 23560,
+     "scalar": [
+      47.01,
+      37.07,
+      25.64,
+      13.92,
+      0.12,
+      0.0
+     ],
+     "source": "eight-replicate production pool"
+    },
+    "C": {
+     "depth": [
+      5.75,
+      1.33,
+      0.24,
+      0.05,
+      0.0,
+      0.0
+     ],
+     "nvox": 3690,
+     "populated": 2954,
+     "scalar": [
+      74.36,
+      67.59,
+      60.19,
+      44.17,
+      9.78,
+      2.17
+     ],
+     "source": "eight-replicate production pool"
+    },
+    "D": {
+     "depth": [
+      100.0,
+      75.0,
+      75.0,
+      37.5,
+      37.5,
+      0.0
+     ],
+     "nvox": 8,
+     "populated": 8,
+     "scalar": [
+      100.0,
+      100.0,
+      100.0,
+      75.0,
+      75.0,
+      62.5
+     ],
+     "source": "eight-replicate production pool"
+    }
+   },
+   "reps": 8,
+   "source": "eight-replicate production pool"
+  },
+  "C5aR1": {
+   "pops": {
+    "A": {
+     "depth": [
+      8.79,
+      1.25,
+      0.02,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "nvox": 32987,
+     "populated": 2900,
+     "scalar": [
+      8.79,
+      1.25,
+      0.01,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "source": "eight-replicate production pool"
+    },
+    "B": {
+     "depth": [
+      0.16,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "nvox": 43384,
+     "populated": 23995,
+     "scalar": [
+      55.31,
+      45.97,
+      35.78,
+      22.72,
+      7.03,
+      0.0
+     ],
+     "source": "eight-replicate production pool"
+    },
+    "C": {
+     "depth": [
+      8.32,
+      1.84,
+      0.47,
+      0.1,
+      0.0,
+      0.0
+     ],
+     "nvox": 2993,
+     "populated": 2535,
+     "scalar": [
+      84.7,
+      78.78,
+      71.13,
+      56.36,
+      28.3,
+      5.85
+     ],
+     "source": "eight-replicate production pool"
+    },
+    "D": {
+     "depth": [
+      69.23,
+      46.15,
+      30.77,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "nvox": 13,
+     "populated": 13,
+     "scalar": [
+      100.0,
+      100.0,
+      84.62,
+      84.62,
+      76.92,
+      69.23
+     ],
+     "source": "eight-replicate production pool"
+    }
+   },
+   "reps": 8,
+   "source": "eight-replicate production pool"
+  },
+  "TREK-1": {
+   "pops": {
+    "A": {
+     "depth": [
+      3.08,
+      3.08,
+      1.52,
+      0.02,
+      0.0,
+      0.0
+     ],
+     "nvox": 22481,
+     "populated": 693,
+     "scalar": [
+      3.08,
+      3.08,
+      0.16,
+      0.01,
+      0.0,
+      0.0
+     ],
+     "source": "four-replicate production pool"
+    },
+    "B": {
+     "depth": [
+      0.23,
+      0.01,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "nvox": 28104,
+     "populated": 14053,
+     "scalar": [
+      50.0,
+      50.0,
+      40.95,
+      34.95,
+      22.99,
+      4.49
+     ],
+     "source": "four-replicate production pool"
+    },
+    "C": {
+     "depth": [
+      10.12,
+      2.93,
+      1.1,
+      0.44,
+      0.24,
+      0.04
+     ],
+     "nvox": 5009,
+     "populated": 3751,
+     "scalar": [
+      74.89,
+      74.89,
+      68.34,
+      63.61,
+      53.84,
+      29.39
+     ],
+     "source": "four-replicate production pool"
+    },
+    "D": {
+     "depth": [
+      24.14,
+      20.69,
+      13.79,
+      6.9,
+      0.0,
+      0.0
+     ],
+     "nvox": 29,
+     "populated": 13,
+     "scalar": [
+      44.83,
+      44.83,
+      41.38,
+      41.38,
+      37.93,
+      31.03
+     ],
+     "source": "four-replicate production pool"
+    }
+   },
+   "reps": 4,
+   "source": "four-replicate production pool"
+  }
+ }
+}

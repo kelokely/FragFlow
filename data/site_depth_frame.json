@@ -1,0 +1,257 @@
+{
+ "AAC": {
+  "cav11": {
+   "estimator": "stored centroid mapped to raw coordinates by the inverse per-frame Kabsch",
+   "mean_of_replicates": 1.283341553161351,
+   "n_replicates": 8,
+   "per_replicate": {
+    "rep1": 1.3072,
+    "rep2": 1.221,
+    "rep3": 1.2589,
+    "rep4": 1.3143,
+    "rep5": 1.3036,
+    "rep6": 1.3268,
+    "rep7": 1.2434,
+    "rep8": 1.2917
+   },
+   "pooled": 1.2833415531613508,
+   "sd_between_replicates": 0.03774119641889885,
+   "wall_estimator_mean": 1.2046,
+   "wall_minus_centroid": -0.0788
+  },
+  "cav14": {
+   "estimator": "stored centroid mapped to raw coordinates by the inverse per-frame Kabsch",
+   "mean_of_replicates": -0.2209034359630626,
+   "n_replicates": 8,
+   "per_replicate": {
+    "rep1": -0.2073,
+    "rep2": -0.2794,
+    "rep3": -0.2364,
+    "rep4": -0.1823,
+    "rep5": -0.2079,
+    "rep6": -0.1706,
+    "rep7": -0.2666,
+    "rep8": -0.2168
+   },
+   "pooled": -0.22090343596306264,
+   "sd_between_replicates": 0.03807929332433881,
+   "wall_estimator_mean": -0.1582,
+   "wall_minus_centroid": 0.0627
+  },
+  "cav18": {
+   "estimator": "stored centroid mapped to raw coordinates by the inverse per-frame Kabsch",
+   "mean_of_replicates": 1.3127601875056276,
+   "n_replicates": 8,
+   "per_replicate": {
+    "rep1": 1.3436,
+    "rep2": 1.2451,
+    "rep3": 1.3149,
+    "rep4": 1.3473,
+    "rep5": 1.3251,
+    "rep6": 1.3736,
+    "rep7": 1.277,
+    "rep8": 1.2755
+   },
+   "pooled": 1.3127601875056274,
+   "sd_between_replicates": 0.043518033147397626,
+   "wall_estimator_mean": 1.2268,
+   "wall_minus_centroid": -0.0859
+  },
+  "cav39": {
+   "estimator": "stored centroid mapped to raw coordinates by the inverse per-frame Kabsch",
+   "mean_of_replicates": -0.7811116424922568,
+   "n_replicates": 8,
+   "per_replicate": {
+    "rep1": -0.8017,
+    "rep2": -0.8291,
+    "rep3": -0.7878,
+    "rep4": -0.7273,
+    "rep5": -0.7724,
+    "rep6": -0.7109,
+    "rep7": -0.8358,
+    "rep8": -0.7838
+   },
+   "pooled": -0.7811116424922568,
+   "sd_between_replicates": 0.04419138956527658,
+   "wall_estimator_mean": -0.6725,
+   "wall_minus_centroid": 0.1087
+  }
+ },
+ "C5aR1": {
+  "cav1": {
+   "estimator": "stored centroid mapped to raw coordinates by the inverse per-frame Kabsch",
+   "mean_of_replicates": 0.8551089698729497,
+   "n_replicates": 8,
+   "per_replicate": {
+    "rep1": 0.773,
+    "rep2": 0.8453,
+    "rep3": 0.8615,
+    "rep4": 0.8707,
+    "rep5": 0.9208,
+    "rep6": 0.8938,
+    "rep7": 0.826,
+    "rep8": 0.8499
+   },
+   "pooled": 0.854935762513119,
+   "sd_between_replicates": 0.044419199455274505,
+   "wall_estimator_mean": 0.8189,
+   "wall_minus_centroid": -0.0362
+  },
+  "cav10": {
+   "estimator": "stored centroid mapped to raw coordinates by the inverse per-frame Kabsch",
+   "mean_of_replicates": -1.1332113246195492,
+   "n_replicates": 8,
+   "per_replicate": {
+    "rep1": -1.2461,
+    "rep2": -1.1191,
+    "rep3": -1.1106,
+    "rep4": -1.1193,
+    "rep5": -1.0708,
+    "rep6": -1.0796,
+    "rep7": -1.1598,
+    "rep8": -1.1603
+   },
+   "pooled": -1.133365520698858,
+   "sd_between_replicates": 0.05587608217331714,
+   "wall_estimator_mean": -1.1127,
+   "wall_minus_centroid": 0.0205
+  },
+  "cav2": {
+   "estimator": "stored centroid mapped to raw coordinates by the inverse per-frame Kabsch",
+   "mean_of_replicates": -0.7869401346380884,
+   "n_replicates": 8,
+   "per_replicate": {
+    "rep1": -0.8794,
+    "rep2": -0.7588,
+    "rep3": -0.8119,
+    "rep4": -0.8371,
+    "rep5": -0.6265,
+    "rep6": -0.6903,
+    "rep7": -0.8575,
+    "rep8": -0.8341
+   },
+   "pooled": -0.7872850591903078,
+   "sd_between_replicates": 0.08845542519172954,
+   "wall_estimator_mean": -0.8581,
+   "wall_minus_centroid": -0.0712
+  },
+  "cav3": {
+   "estimator": "stored centroid mapped to raw coordinates by the inverse per-frame Kabsch",
+   "mean_of_replicates": -0.06933125190102514,
+   "n_replicates": 8,
+   "per_replicate": {
+    "rep1": -0.1772,
+    "rep2": -0.0441,
+    "rep3": -0.0709,
+    "rep4": -0.0893,
+    "rep5": 0.0469,
+    "rep6": 0.0116,
+    "rep7": -0.1201,
+    "rep8": -0.1114
+   },
+   "pooled": -0.06958938715890278,
+   "sd_between_replicates": 0.07279013662541826,
+   "wall_estimator_mean": -0.0491,
+   "wall_minus_centroid": 0.0202
+  },
+  "cav4": {
+   "estimator": "stored centroid mapped to raw coordinates by the inverse per-frame Kabsch",
+   "mean_of_replicates": 1.0945668764573249,
+   "n_replicates": 8,
+   "per_replicate": {
+    "rep1": 1.0212,
+    "rep2": 1.0548,
+    "rep3": 1.1275,
+    "rep4": 1.1621,
+    "rep5": 1.0827,
+    "rep6": 1.0855,
+    "rep7": 1.0995,
+    "rep8": 1.1232
+   },
+   "pooled": 1.0945356002019915,
+   "sd_between_replicates": 0.044212515906838674,
+   "wall_estimator_mean": 0.9609,
+   "wall_minus_centroid": -0.1337
+  }
+ },
+ "TREK-1": {
+  "HS1": {
+   "estimator": "stored centroid mapped to raw coordinates by the inverse per-frame Kabsch",
+   "mean_of_replicates": 1.8195957866124237,
+   "n_replicates": 4,
+   "per_replicate": {
+    "rep1": 1.8022,
+    "rep2": 1.809,
+    "rep3": 1.8743,
+    "rep4": 1.7928
+   },
+   "pooled": 1.819595786612424,
+   "sd_between_replicates": 0.037103835118096985,
+   "wall_estimator_mean": null,
+   "wall_minus_centroid": null
+  },
+  "HS6": {
+   "estimator": "stored centroid mapped to raw coordinates by the inverse per-frame Kabsch",
+   "mean_of_replicates": 0.524119064660632,
+   "n_replicates": 4,
+   "per_replicate": {
+    "rep1": 0.4597,
+    "rep2": 0.4759,
+    "rep3": 0.6246,
+    "rep4": 0.5363
+   },
+   "pooled": 0.524119064660632,
+   "sd_between_replicates": 0.0746776946912841,
+   "wall_estimator_mean": null,
+   "wall_minus_centroid": null
+  },
+  "HS8": {
+   "estimator": "stored centroid mapped to raw coordinates by the inverse per-frame Kabsch",
+   "mean_of_replicates": -0.3638507947231671,
+   "n_replicates": 4,
+   "per_replicate": {
+    "rep1": -0.4242,
+    "rep2": -0.4167,
+    "rep3": -0.2615,
+    "rep4": -0.353
+   },
+   "pooled": -0.36385079472316706,
+   "sd_between_replicates": 0.07533683885194604,
+   "wall_estimator_mean": null,
+   "wall_minus_centroid": null
+  },
+  "ML335c2": {
+   "estimator": "stored centroid mapped to raw coordinates by the inverse per-frame Kabsch",
+   "mean_of_replicates": 0.690757264415613,
+   "n_replicates": 4,
+   "per_replicate": {
+    "rep1": 0.7182,
+    "rep2": 0.7292,
+    "rep3": 0.6956,
+    "rep4": 0.62
+   },
+   "pooled": 0.6907572644156129,
+   "sd_between_replicates": 0.04920496979851937,
+   "wall_estimator_mean": null,
+   "wall_minus_centroid": null
+  }
+ },
+ "_convention": "circular-mean midplane on raw phosphate z, minimum-image depth, zeta = 2d/thickness. No centering or wrapping is applied.",
+ "_discard_ps": 50000.0,
+ "_does_not_affect": "any ddG: the depth-matched control sits at the cavity's own z within the same frame, so every ratio is unchanged by this label",
+ "_estimator": "the cavity's STORED centroid, mapped out of the analysis-reference frame into raw coordinates by the inverse of that frame's Kabsch rotation, so the frame is the only thing that differs from the reported quantity",
+ "_generated": "computed from the production trajectories at the stride and discard recorded above; see Algorithm S2 in the Supporting Information",
+ "_stride": 20,
+ "_validation_replicate1": {
+  "passed": true,
+  "targets": {
+   "AAC/cav39": -0.801,
+   "C5aR1/cav3": -0.178,
+   "TREK-1/HS6": 0.458,
+   "TREK-1/HS8": -0.425,
+   "TREK-1/ML335c2": 0.719
+  }
+ },
+ "_wall_estimator": "a second estimator, reported for comparison only: locating a cavity by its wall residues instead of its stored centroid shifts zeta by about 0.13. Quantities quoted in the manuscript use the centroid estimator described under _estimator.",
+ "_what": "Reduced site depth zeta in the frozen membrane-frame convention, per cavity."
+}

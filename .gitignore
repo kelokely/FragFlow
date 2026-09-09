@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# figure output, regenerated from data/ by the scripts
+scripts/fig4_reference.pdf
+scripts/fig4_reference.png
+scripts/fig4_reference.csv
+scripts/fig5_specificity.pdf
+scripts/fig5_specificity.png
+scripts/fig5_specificity.csv

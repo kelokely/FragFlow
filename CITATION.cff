@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this data, these inputs or this code, please cite the article below."
+title: "FragFlow: depth-resolved cosolvent mapping in lipid bilayers -- data, simulation inputs and figure code"
+abstract: >-
+  Source data, simulation input sets and figure code for FragFlow, a cosolvent molecular dynamics
+  method that scores probe density against a depth-resolved reference measured in the same box
+  rather than against a single scalar bulk density. Covers three membrane proteins in POPC: the
+  ADP/ATP carrier, C5a receptor 1 and TREK-1.
+type: dataset
+license: [MIT, CC-BY-4.0]
+authors:
+  - family-names: Nael
+    given-names: Manal A.
+    affiliation: "Department of Pharmaceutical Chemistry, Faculty of Pharmacy, Tanta University, Tanta, Egypt"
+  - family-names: Alakonda
+    given-names: Laxman M.
+    affiliation: "Division of Pharmaceutical Sciences, School of Pharmacy, University of Wyoming, Laramie, Wyoming, United States"
+  - family-names: Elokely
+    given-names: Khaled M.
+    affiliation: "Division of Pharmaceutical Sciences, School of Pharmacy, University of Wyoming, Laramie, Wyoming, United States"
+    orcid: "https://orcid.org/0000-0002-2394-021X"
+keywords:
+  - cosolvent molecular dynamics
+  - membrane proteins
+  - cryptic binding sites
+  - fragment mapping
+  - lipid bilayer
+  - hotspot detection
+preferred-citation:
+  type: article
+  title: "FragFlow: depth-resolved cosolvent mapping recovers cryptic and allosteric sites inside lipid bilayers"
+  authors:
+    - family-names: Nael
+      given-names: Manal A.
+    - family-names: Alakonda
+      given-names: Laxman M.
+    - family-names: Elokely
+      given-names: Khaled M.
+  journal: "Journal of Chemical Information and Modeling"
+  year: 2026

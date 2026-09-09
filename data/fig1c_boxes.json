@@ -1,0 +1,35 @@
+{
+ "_band_A": 22.0,
+ "_generated": "measured from the equilibrated box height of each system's own production trajectory, at the stride recorded above",
+ "_note": "the three baselines span 17.11 to 19.79 %; a single 17.3 % line is the box of the phenol and acetamide systems and is not benzene's",
+ "_range_pct": [
+  17.108508424301395,
+  19.790182627118185
+ ],
+ "_stride": 20,
+ "_what": "mean box height of the system each point in panel (c) of Figure 4 was measured in, and the geometric no-preference occupancy that follows from it",
+ "acetamide": {
+  "mean_box_z_A": 128.5909879130702,
+  "n_frames_sampled": 31,
+  "n_frames_total": 602,
+  "no_preference_pct": 17.108508424301395,
+  "sd_box_z_A": 1.4315461412417327,
+  "system": "TREK-1 apo + acetamide"
+ },
+ "benzene": {
+  "mean_box_z_A": 111.16623031994529,
+  "n_frames_sampled": 121,
+  "n_frames_total": 2404,
+  "no_preference_pct": 19.790182627118185,
+  "sd_box_z_A": 1.0934985167662106,
+  "system": "GPR40 + benzene"
+ },
+ "phenol": {
+  "mean_box_z_A": 126.80124214047291,
+  "n_frames_sampled": 61,
+  "n_frames_total": 1204,
+  "no_preference_pct": 17.349987767176575,
+  "sd_box_z_A": 1.5407088790979304,
+  "system": "TREK-1 apo + phenol"
+ }
+}
