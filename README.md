@@ -44,6 +44,13 @@ at 303.15 K under semi-isotropic pressure coupling. `production.mdp` in each dir
 run setting. The starting coordinates in `start.gro` are the equilibrated systems at the point
 production began, so a run reproduced from them starts where the reported trajectories start.
 
+One setting needs saying out loud. `nsteps` is not the production length in every directory, because
+the carrier was produced by extension rather than in one shot: its `production.mdp` carries
+`continuation = yes` and an `nsteps` of 500 000, which is a single 1 ns chunk. Reported production
+per replicate is 200 ns for the carrier, 150 ns for the receptor and 200 ns for TREK-1, and the
+first 50 ns of each is discarded before analysis. To reproduce a replicate, set `nsteps` to the
+target length or extend the run to it; do not take `nsteps` as given.
+
 ## Regenerating the figures
 
 Requires Python with NumPy and Matplotlib.
