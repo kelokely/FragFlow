@@ -11,7 +11,8 @@ validated site. Population C carries the same definition in all three systems: n
 detected cavity. Population B is the population the depth reference is fit on, so its depth-resolved
 curve is circular by construction and is marked as such on the panel rather than plotted silently.
 
-On TREK-1 the true-positive population is HS6 (zeta +0.55) and HS8 (zeta -0.34). It is not the ML335
+On TREK-1 the true-positive population is HS6 and HS8, whose reduced depths are read from the depth
+artifact along with every other depth in this figure. It is not the ML335
 site: three independent geometries around ML335 -- the 23 ligand atoms, the ligand centroid, and an
 independent landmark 0.07 A from it -- each return zero benzene-visited voxels, and the site is
 recorded as closed to two chemistries (measured ddG +0.77 and +2.28). HS1, at zeta +1.81, lies
@@ -59,7 +60,8 @@ DATA = {
     # n = 4: the four apo production replicates. The holo replicates are a different state and
     # are not pooled with them.
     "TREK-1": dict(
-        site="HS6, HS8", zeta=("TREK-1", "HS6"), nvox=dict(A=22481, B=28104, C=5009, D=29),
+        site="HS6, HS8", zeta=("TREK-1", "HS6"), zeta2=("TREK-1", "HS8"),
+        nvox=dict(A=22481, B=28104, C=5009, D=29),
         A=([3.08, 3.08, 1.52, 0.02, 0.00, 0.00], [3.08, 3.08, 0.16, 0.01, 0.00, 0.00]),
         B=([0.23, 0.01, 0.00, 0.00, 0.00, 0.00], [50.00, 50.00, 40.95, 34.95, 22.99, 4.49]),
         C=([10.12, 2.93, 1.10, 0.44, 0.24, 0.04], [74.89, 74.89, 68.34, 63.61, 53.84, 29.39]),
@@ -157,8 +159,13 @@ def resolve_zeta():
                                  f"not carry a literal {key!r}")
         sysn, cav = key
         d["zeta"] = round(sdf[sysn][cav]["mean_of_replicates"], 2)
+        if "zeta2" in d:
+            s2, c2 = d["zeta2"]
+            d["zeta2"] = round(sdf[s2][c2]["mean_of_replicates"], 2)
     print("  site depths from site_depth_frame.json: "
-          + ", ".join(f"{n} {d['zeta']:+.2f}" for n, d in DATA.items()), flush=True)
+          + ", ".join(f"{n} {d['zeta']:+.2f}"
+                      + (f"/{d['zeta2']:+.2f}" if "zeta2" in d else "")
+                      for n, d in DATA.items()), flush=True)
 
 
 resolve_zeta()
@@ -207,8 +214,11 @@ for ax, (name, d) in zip(axes, DATA.items()):
     _nC = d["nvox"]["C"]
     _kC = round(cd * _nC / 100.0)
     disc_d = (dd / (100.0 * _kC / _nC)) if _kC else float("inf")
-    zlab = (f"$\\zeta$ = {d['zeta']:+.2f}" if name != "TREK-1"
-            else r"$\zeta$ +0.55, $-$0.34   (ML335: no benzene)")
+    if "zeta2" in d:
+        z2 = f"{d['zeta2']:+.2f}".replace("-", u"\u2212")
+        zlab = f"$\\zeta$ {d['zeta']:+.2f}, {z2}   (ML335: no benzene)"
+    else:
+        zlab = f"$\\zeta$ = {d['zeta']:+.2f}"
     ax.set_title(f"{name}\n{d['site']}   {zlab}\n"
                  f"site ÷ non-site:  {fmt_x(disc_d)}× vs {ds / cs:.2f}×",
                  fontsize=8.3, color=INK, pad=6, linespacing=1.5)
