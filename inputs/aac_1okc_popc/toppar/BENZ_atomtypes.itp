@@ -1,0 +1,12 @@
+; BENZ_atomtypes.itp -- CGenFF aromatic atom types required by the benzene probe (BENZ).
+; Copied VERBATIM from the CHARMM36-jul2021 GROMACS port ffnonbonded.itp
+;   the CHARMM36 (July 2021) GROMACS force-field distribution
+;   HGR61 -> line 185 ; CG2R61 -> line 218   (re-verified on ARCC 2026-07-22).
+; The campaign toppar/forcefield.itp does NOT define these (grep empty). Their LJ is
+; IDENTICAL to campaign types HP (=HGR61) and CA (=CG2R61) -> no new LJ physics, only
+; the two type NAMES the BENZ residue references.
+; #include this line immediately AFTER "toppar/forcefield.itp" in topol.top.
+;   name  at.num   mass      charge  ptype   sigma(nm)        epsilon(kJ/mol)   (comb-rule 2)
+[ atomtypes ]
+ HGR61     1     1.008000    0.000     A   0.242003727796   0.1255200   ; aromatic H
+CG2R61     6    12.011000    0.000     A   0.355005321205   0.2928800   ; 6-mem aromatic C

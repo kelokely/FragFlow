@@ -25,7 +25,7 @@ in the paper, and to run the three systems again from the coordinates they start
                 per-replicate channel values, residence statistics and lipid-competition events
     scripts/    fig4_reference.py, fig5_specificity.py
     inputs/     aac_1okc_popc, c5ar1_5o9h, trek1_apo: run parameters, topology, index groups,
-                starting coordinates and stream files for each system
+                starting coordinates and the include-topology files each system needs
 
 ## Systems
 
@@ -43,6 +43,12 @@ Production used GROMACS with the CHARMM36m protein and lipid parameters and the 
 at 303.15 K under semi-isotropic pressure coupling. `production.mdp` in each directory carries every
 run setting. The starting coordinates in `start.gro` are the equilibrated systems at the point
 production began, so a run reproduced from them starts where the reported trajectories start.
+
+Every `#include` in the carrier's and TREK-1's topologies resolves inside its own directory. The
+receptor's topology is the one exception: its first line is
+`#include "charmm36-jul2021.ff/forcefield.itp"`, which names the published CHARMM36 July 2021
+GROMACS force-field distribution rather than a file shipped here. Put that distribution beside
+`topol.top`, or point the include at `toppar/forcefield.itp`, which carries the same parameters.
 
 One setting needs saying out loud. `nsteps` is not the production length in every directory, because
 the carrier was produced by extension rather than in one shot: its `production.mdp` carries
