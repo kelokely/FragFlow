@@ -19,7 +19,7 @@ frames, as the numerator it divides.
 ```
 INPUT   trajectory frames F, probe set P, lipid phosphorus set Q, protein heavy atoms A
 CONST   REF_CUT      = 25.0     # A, minimum lateral distance from protein for a "far-field" probe
-        N_BINS       = 22       # zeta bins spanning [-1.5, +1.5]
+        N_BINS       = 30       # zeta bins spanning [-1.5, +1.5]
         DISCARD_PS   = 50000    # partitioning is still transient before this
         RT           = 0.602    # kcal/mol at 303.15 K
 
@@ -31,7 +31,7 @@ FOR each frame f in F with time(f) >= DISCARD_PS:
                                                                      # the bilayer straddles the
                                                                      # periodic boundary
     upper    <- { q in Q : z_q > z_mid },  lower <- { q in Q : z_q < z_mid }
-    D_PP(f)  <- mean(z of upper) - mean(z of lower)
+    D_PP(f)  <- median(z of upper) - median(z of lower)
 
     # --- assign every probe a depth and a far-field flag ---------------------------------
     FOR each probe p in P:
