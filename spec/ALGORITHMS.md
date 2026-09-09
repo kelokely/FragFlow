@@ -147,7 +147,7 @@ FOR each (probe p, site s):
 
 **No gap bridging is a measured choice, not a convention.** The smallest inter-event gap observed on
 the carrier was 400 ps and never 200 ps, across 934 gaps; bridging at 600 ps moves the fast-component
-weight from 86.5 % to 76.4 %, so part of what bridging recovers is boundary rattle rather than
+weight from 85.9 % to 77.6 %, so part of what bridging recovers is boundary rattle rather than
 continued residence.
 
 **Which of these constants matters.** Sweeping one at a time: `CONTACT` is **inert** across 3.5 to
