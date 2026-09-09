@@ -50,12 +50,13 @@ receptor's topology is the one exception: its first line is
 GROMACS force-field distribution rather than a file shipped here. Put that distribution beside
 `topol.top`, or point the include at `toppar/forcefield.itp`, which carries the same parameters.
 
-One setting needs saying out loud. `nsteps` is not the production length in every directory, because
-the carrier was produced by extension rather than in one shot: its `production.mdp` carries
-`continuation = yes` and an `nsteps` of 500 000, which is a single 1 ns chunk. Reported production
-per replicate is 200 ns for the carrier, 150 ns for the receptor and 200 ns for TREK-1, and the
-first 50 ns of each is discarded before analysis. To reproduce a replicate, set `nsteps` to the
-target length or extend the run to it; do not take `nsteps` as given.
+One setting needs saying out loud. `nsteps` is not the production length in two of the three
+directories, because those runs were produced by extension rather than in one shot. The carrier's
+`production.mdp` carries `continuation = yes` and an `nsteps` of 500 000, a single 1 ns chunk;
+TREK-1's carries 75 000 000, which is 150 ns. Analysis windows run to 200 ns on the carrier and on
+TREK-1 and to 150 ns on the receptor, with the first 50 ns of each discarded, so only the receptor's
+`nsteps` is the length its trajectory reached. To reproduce a replicate, set `nsteps` to the target
+length or extend the run to it; do not take `nsteps` as given.
 
 ## Regenerating the figures
 
