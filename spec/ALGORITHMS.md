@@ -169,7 +169,7 @@ cannot define its own site.
 
 ```
 INPUT   protein wall residues W of the site (recorded, not re-derived per frame)
-CONST   PROBE_R = 5.0    # A, the same radius the occupancy channel uses
+CONST   PROBE_R = 5.0    # A, the same radius the occupancy measure uses
 
 FOR each frame f:
     center(f)  <- centroid of the heavy atoms of W in frame f     # tracks the pocket as it moves
