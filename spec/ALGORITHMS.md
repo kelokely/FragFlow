@@ -1,7 +1,8 @@
 # Algorithms S1 to S5: numerical specification of FragFlow
 
 This file is a plain-text copy of **Section S11 of the Supporting Information**, provided for convenience;
-the typeset version in the Supporting Information is authoritative.
+the typeset version in the Supporting Information is authoritative. The analysis implementation is
+not distributed with this paper.
 FragFlow is defined by this specification, which gives the five procedures that are not fully determined
 by the Methods text, in a form sufficient for independent reimplementation. Every constant is the
 frozen value used for all results in the paper.
