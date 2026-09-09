@@ -90,12 +90,12 @@ gs = fig.add_gridspec(1, 3, width_ratios=[1.25, 1.0, 1.0], wspace=0.42,
 ax = fig.add_subplot(gs[0, 0])
 Pm = np.eye(NB) - np.ones((NB, NB)) / NB
 raw = {}
-for arm, colour in (("apo", BLUE), ("holo", ORANGE)):
+for arm, color in (("apo", BLUE), ("holo", ORANGE)):
     for rep in (1, 2, 3, 4):
         f = os.path.join(DATA, f"perrep/{arm}_rep{rep}.npz")
         g = profile(np.load(f, allow_pickle=True)["zeta"])[:NB]
         raw.setdefault(arm, []).append(g)
-        ax.plot(CEN[:NB], g, color=colour, lw=1.1, alpha=0.75, zorder=2)
+        ax.plot(CEN[:NB], g, color=color, lw=1.1, alpha=0.75, zorder=2)
 allg = np.array(raw["apo"] + raw["holo"])
 lvl = allg[:, :5].mean(1)
 ax.axhline(0.0, color=INK3, lw=0.7, ls=(0, (4, 3)), zorder=1)
