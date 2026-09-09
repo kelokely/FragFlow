@@ -83,7 +83,10 @@ rep1 values reproduce two independently recorded depths to 0.001.
 
 This replaces a column measured along the **aligned** z. Superposing each production
 frame onto the analysis reference carries the protein's tilt in the bilayer over to the bilayer, so
-that axis is not the membrane normal; the mean tilt is 6.0 deg on C5aR1 and 10.9 deg on AAC. The
+that axis is not the membrane normal; the per-frame mean tilt is 9.5 +/- 4.2 deg on AAC and
+10.1 +/- 3.9 deg on C5aR1, which is the measurement Section S3.4 of the Supporting Information
+reports. An earlier note quoted 6.0 and 10.9 deg; those came from the angle of the window-mean
+normal on a single replicate, which is a different estimator and is not what the paper uses. The
 same site therefore reads -0.14 on the old axis and -0.07 on this one. The C5aR1 bilayer also
 straddles the periodic boundary in every replicate, which an arithmetic midplane would place inside
 the acyl core -- the circular mean is what makes the number well defined there at all.
