@@ -70,7 +70,10 @@ DATA = {
 
 POPS = [
     ("C", "#2a78d6", 1.9, "C  non-site acyl core", 3.2),
-    ("D", "#eb6834", 1.9, "D  validated site",     3.3),
+    # One legend serves three panels and the carrier's population D is the candidate cav35,
+    # not a validated site: Table 1 and SI Table S3 label it accordingly. "site scored" is
+    # Table 1's own row label and is the one wording true of all three systems.
+    ("D", "#eb6834", 1.9, "D  site scored",       3.3),
     ("A", "#6e6e68", 1.1, "A  bulk water",         2.0),
     ("B", "#9a9a94", 1.1, "B  far-field core ⚠ circular", 2.1),
 ]
