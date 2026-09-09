@@ -32,7 +32,7 @@ parameters, topology, index groups, starting coordinates and the stream files ea
 | `cavities_c5ar1.json` | File S1 | C5aR1 cavity inventory: volume, occupancy, zeta, extent, centroid, distance to ligand |
 | `cavities_aac.json` | File S2 | AAC cavity inventory, same fields |
 | `cavities_trek.json` | File S3 | TREK-1 cavity inventory, same fields |
-| `cav35_characterization.json` | File S4 | cav35 wall residues, per-replicate occupancy, lining composition |
+| `cav35_characterization.json` | File S4 | cav35 wall residues, per-replicate occupancy, lining composition; the file keys the site as cav39, the identifier it carried before the regions were renumbered |
 
 ## Per-replicate channel values
 
