@@ -7,7 +7,7 @@ abstract: >-
   rather than against a single scalar bulk density. Covers three membrane proteins in POPC: the
   ADP/ATP carrier, C5a receptor 1 and TREK-1.
 type: dataset
-license: [MIT, CC-BY-4.0]
+license: CC-BY-4.0
 authors:
   - family-names: Nael
     given-names: Manal A.
